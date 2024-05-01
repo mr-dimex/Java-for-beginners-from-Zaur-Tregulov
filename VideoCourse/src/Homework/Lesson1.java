@@ -8,6 +8,6 @@ public class Lesson1 {
         System.out.println("Непонятного нет для меня под луной.");
         System.out.println("Мне известно, что мне ничего не известно!");
         System.out.println("Вот последняя правда, открытая мной.");
-        System.out.println("                                 О.Хайям");
+        System.out.println("                                О. Хайям");
     }
 }
