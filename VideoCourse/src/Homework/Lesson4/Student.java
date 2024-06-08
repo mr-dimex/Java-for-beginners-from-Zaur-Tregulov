@@ -21,7 +21,6 @@ class StudentTest {
         st1.averageRatingMath = 4.8;
         st1.averageRatingEconomics = 4.0;
         st1.averageRatingForeignLanguage = 5.0;
-        double average1 = (st1.averageRatingMath + st1.averageRatingEconomics + st1.averageRatingForeignLanguage) / 3;
 
         Student st2 = new Student();
         st2.studentID = 2;
@@ -31,7 +30,6 @@ class StudentTest {
         st2.averageRatingMath = 4.5;
         st2.averageRatingEconomics = 4.7;
         st2.averageRatingForeignLanguage = 4.4;
-        double average2 = (st2.averageRatingMath + st2.averageRatingEconomics + st2.averageRatingForeignLanguage) / 3;
 
         Student st3 = new Student();
         st3.studentID = 3;
@@ -41,13 +39,12 @@ class StudentTest {
         st3.averageRatingMath = 3.3;
         st3.averageRatingEconomics = 4.0;
         st3.averageRatingForeignLanguage = 4.2;
-        double average3 = (st3.averageRatingMath + st3.averageRatingEconomics + st3.averageRatingForeignLanguage) / 3;
 
-        System.out.println("Средняя арифметическая оценка студента " +
-                st1.studentName + " " + st1.studentSurname + " равна: " + average1);
-        System.out.println("Средняя арифметическая оценка студента " +
-                st2.studentName + " " + st2.studentSurname + " равна: " + average2);
-        System.out.println("Средняя арифметическая оценка студента " +
-                st3.studentName + " " + st3.studentSurname + " равна: " + average3);
+        System.out.println("Средняя арифметическая оценка студента " + st1.studentName + " " + st1.studentSurname + " равна: "
+                + (st1.averageRatingMath + st1.averageRatingEconomics + st1.averageRatingForeignLanguage) / 3);
+        System.out.println("Средняя арифметическая оценка студента " + st2.studentName + " " + st2.studentSurname + " равна: "
+                + (st2.averageRatingMath + st2.averageRatingEconomics + st2.averageRatingForeignLanguage) / 3);
+        System.out.println("Средняя арифметическая оценка студента " + st3.studentName + " " + st3.studentSurname + " равна: "
+                + (st3.averageRatingMath + st3.averageRatingEconomics + st3.averageRatingForeignLanguage) / 3);
     }
 }
