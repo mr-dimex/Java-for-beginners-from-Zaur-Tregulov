@@ -5,13 +5,13 @@ public class BankAccount {
     String name;
     double balance;
 
-    double popolnenieScheta (double p) {           // Метод для пополнения счёта
-        balance += p;
+    double popolnenieScheta (double summaPopolneniya) {           // Метод для пополнения счёта
+        balance += summaPopolneniya;
         return balance;
     }
 
-    double snyatieSoScheta (double s) {            // Метод для снятия средств со счёта
-        balance -= s;
+    double snyatieSoScheta (double summaSnyatiya) {               // Метод для снятия средств со счёта
+        balance -= summaSnyatiya;
         return balance;
     }
 }
@@ -37,9 +37,9 @@ class BankAccountTest {
         System.out.println("Баланс счёта пользователя " + YourAccount.name + " равен: " + YourAccount.balance);               // Баланс до изменения
         System.out.println("Баланс счёта пользователя " + HisAccount.name + " равен: " + HisAccount.balance);                 // Баланс до изменения
 
-        MyAccount.popolnenieScheta(90.54);      // Пополняем счёт на 90.54
-        YourAccount.popolnenieScheta(104.0);    // Пополняем счёт на 104.0
-        HisAccount.snyatieSoScheta(19.7);       // Снимаем со счёта 19.7
+        MyAccount.popolnenieScheta(90.54);        // Пополняем счёт на 90.54
+        YourAccount.popolnenieScheta(104.0);      // Пополняем счёт на 104.0
+        HisAccount.snyatieSoScheta(19.7);           // Снимаем со счёта 19.7
 
         System.out.println();
 
